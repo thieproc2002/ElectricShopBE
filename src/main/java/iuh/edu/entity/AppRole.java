@@ -33,4 +33,5 @@ public class AppRole implements Serializable {
     @Column(length = 20)
     public ERole name;
 
+
 }
