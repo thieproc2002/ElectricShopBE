@@ -10,7 +10,7 @@ RUN mvn clean package -DskipTests
 FROM openjdk:17-jdk-alpine
 WORKDIR /app
 
-COPY --from=build /app/target/ElectricShop-0.0.1-SNAPSHOT.war ElectricShop.war
+COPY --from=build /app/target/EletricShop-0.0.1-SNAPSHOT.war EletricShop.war
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","ElectricShop.war"]
+ENTRYPOINT ["java","-jar","EletricShop.war"]
