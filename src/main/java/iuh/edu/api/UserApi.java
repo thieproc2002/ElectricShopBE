@@ -282,7 +282,7 @@ public class UserApi {
 
     public void sendMaiToken(String email, String token, String title) {
         String body = "\r\n" + "    <h2>Hãy nhấp vào link để thay đổi mật khẩu của bạn</h2>\r\n"
-                + "    <a href=\"http://localhost:8080/forgot-password/" + token + "\">Đổi mật khẩu</a>";
+                + "    <a href=\"https://electricshopbe.onrender.com/forgot-password/" + token + "\">Đổi mật khẩu</a>";
         sendMailService.queue(email, title, body);
     }
     @PostMapping("/verify-password")
