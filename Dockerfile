@@ -9,7 +9,8 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17-jdk-alpine
 WORKDIR /app
-
+COPY src/main/resources/templates/ ./templates/
+COPY src/main/resources/static/ ./static/
 COPY --from=build /app/target/EletricShop-0.0.1-SNAPSHOT.war EletricShop.war
 EXPOSE 8080
 
