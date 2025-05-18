@@ -1,7 +1,7 @@
 FROM maven:3-openjdk-17 AS build
 WORKDIR /app
-COPY pom.xml ./
-COPY src ./src/
+
+COPY . .
 RUN mvn clean package -DskipTests
 
 
@@ -9,7 +9,7 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17-jdk-alpine
 WORKDIR /app
-COPY src/main/resources/templates/ ./templates/
+
 COPY --from=build /app/target/EletricShop-0.0.1-SNAPSHOT.war EletricShop.war
 EXPOSE 8080
 

@@ -32,7 +32,7 @@ public class ResetPasswordController {
         map.addAttribute("token", token);
         map.addAttribute("password", "");
         map.addAttribute("confirm", "");
-        return "/reset-password";
+        return "reset-password";
     }
 
     @PostMapping
@@ -46,7 +46,7 @@ public class ResetPasswordController {
             map.addAttribute("name", name);
             map.addAttribute("email", email);
             map.addAttribute("token", token);
-            return "/reset-password";
+            return "reset-password";
         }
         if (!password.equals(confirm)) {
             map.addAttribute("errorConfirm", "error");
@@ -55,7 +55,7 @@ public class ResetPasswordController {
             map.addAttribute("password", password);
             map.addAttribute("confirm", confirm);
             map.addAttribute("token", token);
-            return "/reset-password";
+            return "reset-password";
         }
         User user = userRepository.findByToken(token);
         user.setPassword(passwordEncoder.encode(password));
@@ -66,12 +66,12 @@ public class ResetPasswordController {
 
     @GetMapping("/done")
     public String done() {
-        return "/done";
+        return "done";
     }
 
     @GetMapping("/error")
     public String error() {
-        return "/error";
+        return "error";
     }
 
 }
