@@ -396,7 +396,7 @@ public class SendMailUtil {
 
     static String HEADERSUCCESS = "<body style=\"margin: 0 !important; padding: 0 !important; background-color: #fcb800;\" bgcolor=\"#fcb800\">\r\n"
             + "    <div style=\"display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Open Sans, Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;\">\r\n"
-            + "        Vegana Store chuyên bán thực phẩm sạch\r\n" + "    </div>\r\n"
+            + "        Electric Shop chuyên bán thiết bị điện tử\r\n" + "    </div>\r\n"
             + "    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\r\n" + "        <tr>\r\n"
             + "            <td align=\"center\" style=\"background-color: #eeeeee;\" bgcolor=\"#eeeeee\">\r\n"
             + "                <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:600px;\">\r\n"
@@ -432,7 +432,7 @@ public class SendMailUtil {
 
     static String HEADERCANCEL = "<body style=\"margin: 0 !important; padding: 0 !important; background-color: #fcb800;\" bgcolor=\"#fcb800\">\r\n"
             + "    <div style=\"display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Open Sans, Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;\">\r\n"
-            + "        Vegana Store chuyên bán thực phẩm sạch\r\n" + "    </div>\r\n"
+            + "        Electric Shop chuyên bán thiết bị công nghệ\r\n" + "    </div>\r\n"
             + "    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">\r\n" + "        <tr>\r\n"
             + "            <td align=\"center\" style=\"background-color: #eeeeee;\" bgcolor=\"#eeeeee\">\r\n"
             + "                <table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" style=\"max-width:600px;\">\r\n"
